@@ -1,0 +1,10 @@
+# This shell script is run before Openbox launches.
+# Environment variables set here are passed to the Openbox session.
+
+eval `cat ~/.fehbg`
+numlockx &
+conky -c .conkyrc-openbox &
+#/home/brian/startwbar.sh &
+#trayer --edge bottom --align right --distance 1 --widthtype request --heighttype request --SetDockType true --expand true --transparent true --alpha 255 &
+#conky -c /home/brian/.conkyrc-weather &
+fbpanel &

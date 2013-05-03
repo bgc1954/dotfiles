@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="favorites-menu" label="Favorite Apps">
+  <item label="Terminal">
+    <action name="Execute">
+      <command>urxvt</command>
+    </action>
+  </item>
+  <item label="PCman File Manager">
+    <action name="Execute">
+      <command>pcmanfm</command>
+    </action>
+  </item>
+  <item label="Firefox Web Browser">
+    <action name="Execute">
+      <command>firefox</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-accessories-menu" label="Accessories">
+  <item label="Calculator">
+    <action name="Execute">
+      <command>xcalc</command>
+    </action>
+  </item>
+  <item label="Osmo Calendar">
+    <action name="Execute">
+      <command>osmo</command>
+    </action>
+  </item>
+  <item label="File Archiver">
+    <action name="Execute">
+      <command>xarchiver</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-editors-menu" label="Editors">
+  <item label="Vim">
+    <action name="Execute">
+      <command>urxvt -e vim</command>
+    </action>
+  </item>
+  <item label="Leafpad">
+    <action name="Execute">
+      <command>leafpad</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-term-menu" label="Terminals">
+  <item label="Rxvt Unicode">
+    <action name="Execute">
+      <command>urxvt</command>
+    </action>
+  </item>
+  <item label="Xterm">
+    <action name="Execute">
+   <command>xterm</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-net-menu" label="Internet">
+  <item label="Firefox">
+    <action name="Execute">
+      <command>firefox</command>
+    </action>
+  </item>
+  <item label="XChat">
+    <action name="Execute">
+      <command>xchat</command>
+    </action>
+  </item>
+<item label="Frostwire">
+    <action name="Execute">
+      <command>frostwire</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-office-menu" label="Office">
+  <item label="Gnucash financial">
+    <action name="Execute">
+      <command>gnucash</command>
+    </action>
+  </item>
+  <item label="LibreOffice Calc">
+    <action name="Execute">
+      <command>localc</command>
+    </action>
+  </item>
+  <item label="LibreOffice Impress">
+    <action name="Execute">
+      <command>loimpress</command>
+    </action>
+  </item>
+  <item label="LibreOffice Math">
+    <action name="Execute">
+      <command>lomath</command>
+    </action>
+  </item>
+  <item label="LibreOffice Writer">
+    <action name="Execute">
+      <command>lowriter</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-multimedia-menu" label="Multimedia">
+  <item label="Brasero">
+    <action name="Execute">
+      <command>brasero</command>
+    </action>
+  </item>
+  <item label="Grip CD ripper">
+    <action name="Execute">
+      <command>grip</command>
+    </action>
+  </item>
+  <item label="Audacity Music Editor">
+    <action name="Execute">
+      <command>audacity</command>
+    </action>
+  </item>
+  <item label="MPlayer">
+    <action name="Execute">
+      <command>gmplayer</command>
+    </action>
+  </item>
+  <item label="Avidemux avi to mpg">
+    <action name="Execute">
+      <command>avidemux2_gtk</command>
+    </action>
+  </item>
+  <item label="Varsha mpg to iso">
+    <action name="Execute">
+      <command>java -jar /usr/bin/varsha.jar</command>
+    </action>
+  </item>
+  <item label="DVDshrink">
+    <action name="Execute">
+      <command>wine /home/brian/.wine/drive_c/Program\ Files/DVD\ Shrink/DVD\ Shrink\ 3.2.exe</command>
+    </action>
+  </item>
+  <item label="MPD Start">
+    <action name="Execute">
+      <command>mpd</command>
+    </action>
+  </item>
+  <item label="Sonata">
+    <action name="Execute">
+      <command>sonata</command>
+    </action>
+  </item>
+  <item label="Audacious">
+    <action name="Execute">
+      <command>audacious</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-fileman-menu" label="File Managers">
+  <item label="PCMan File Manager">
+    <action name="Execute">
+      <command>pcmanfm</command>
+    </action>
+  </item>
+  <item label="Midnight Commander">
+    <action name="Execute">
+      <command>urxvt -e mc</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-graphics-menu" label="Graphics">
+  <item label="Gimp">
+    <action name="Execute">
+      <command>gimp</command>
+    </action>
+  </item>
+  <item label="Gpicview">
+    <action name="Execute">
+      <command>gpicview</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="system-menu" label="System">
+  <item label="Openbox Configuration Manager">
+    <action name="Execute">
+      <command>obconf</command>
+    </action>
+  </item>
+  <item label="Manage Cups Printers">
+    <action name="Execute">
+      <command>xdg-open http://localhost:631/</command>
+    </action>
+  </item>
+  <item label="Gparted">
+    <action name="Execute">
+      <command>gksu gparted/</command>
+    </action>
+  </item>
+  <separator />
+  <item label="Reconfigure Openbox">
+    <action name="Reconfigure" />
+  </item>
+  <item label="Logout">
+    <action name="Exit">
+      <prompt>yes</prompt>
+    </action>
+  </item>
+   <item label="Reboot">
+    <action name="Execute">
+      <command>systemctl reboot</command>
+    </action>
+  </item>
+  <item label="Shutdown">
+    <action name="Execute">
+      <command>systemctl poweroff</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+  <separator label="Openbox 3" />
+  <menu id="favorites-menu"/>
+  <menu id="apps-accessories-menu"/>
+  <menu id="apps-editors-menu"/>
+  <menu id="apps-graphics-menu"/>
+  <menu id="apps-net-menu"/>
+  <menu id="apps-office-menu"/>
+  <menu id="apps-multimedia-menu"/>
+  <menu id="apps-term-menu"/>
+  <menu id="apps-fileman-menu"/>
+  <separator />
+  <menu id="system-menu"/>
+</menu>
+
+</openbox_menu>
