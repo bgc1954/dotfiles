@@ -5,15 +5,6 @@ static const char font[] =
 static const char *tile_modes[] =
 	{"monocle", "bstack", "rstack", NULL};
 
-//#define WinterCoat
-//#define SummerCoat
-/* Themes in progress: */
-//#define Daylight
-//#define Grassland
-
-/* include "theme.h" for default themes, or include your own here: */
-#include "theme.h"
-
 /* each tagcon entry defines and icon and/or a name for each tag.
    You may use any combination of entries for any tags including
    using names (pre/post) for some, icons for others, and both for
